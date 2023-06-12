@@ -9,10 +9,10 @@ class MovieMapper {
       overview: json.overview,
       posterPath: json.posterPath != ''
           ? 'https://image.tmdb.org/t/p/w500${json.posterPath}'
-          : 'https://sd.keepcalms.com/i/keep-calm-poster-not-found.png',
+          : 'no-poster',
       backdropPath: json.backdropPath != ''
           ? 'https://image.tmdb.org/t/p/w500${json.backdropPath}'
-          : 'https://sd.keepcalms.com/i/keep-calm-poster-not-found.png',
+          : 'no-poster',
       releaseDate: json.releaseDate,
       voteAverage: json.voteAverage,
       voteCount: json.voteCount,
